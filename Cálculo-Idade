@@ -1,0 +1,29 @@
+print ("Qual o seu nome?")
+
+name = input ("Insira seu nome aqui: ")
+day = int (input ("Qual o dia do seu nascimento?\n"))
+month = int (input ("Qual o mês do seu nascimento?\n"))
+year = int (input ("Qual o ano do seu nascimento?\n"))
+
+print ("Seu nome é " + name + " e você nasceu em " + str(day) + "/" + str(month) + "/" + str(year))
+#dnow + mnow + ynow devem ser preenchidos com o dia atual#
+dnow = 11
+mnow = 9
+ynow = 2019
+
+dexec = dnow - day
+mexec = mnow - month
+yexec = ynow - year
+
+if (dexec < 0):
+  if (mexec < 0):
+    print ("Você tem " + str(yexec - 1) + " anos de idade.") 
+if (dexec > 0):
+  if (mexec < 0):
+      print ("Você tem " + str(yexec - 1) + " anos de idade.") 
+if (dexec < 0):
+  if (mexec > 0):
+      print ("Você tem " + str(yexec - 1) + " anos de idade.") 
+if (dexec >= 0):
+  if (mexec >= 0):
+    print ("Você tem " + str(yexec) + " anos de idade.") 
